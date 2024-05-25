@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Container, HStack, Input, Button, Box } from "@chakra-ui/react";
+import { Container, HStack, Input, Button, Box, Text } from "@chakra-ui/react";
 
 const Index = () => {
   const [isBold, setIsBold] = useState(false);
@@ -25,6 +25,11 @@ const Index = () => {
         </Box>
         <Button onClick={toggleBold}>{isBold ? "Unbold" : "Bold"}</Button>
       </HStack>
+      <Box mt={8} p={4} borderWidth={1} borderRadius="lg" boxShadow="lg" bg="gray.50">
+        <Text fontSize="xl" fontWeight="semibold" color="gray.700">
+          This is a modern styled text.
+        </Text>
+      </Box>
     </Container>
   );
 };
